@@ -46,8 +46,8 @@ export function createWorld() {
     { x: 2100, y: 1560, w: 260, h: 180, color: '#5d8a7a', label: 'DEPOT', roof: '#40615a' },
     // The rival crew lodge by the frozen lake
     { x: 2380, y: 1620, w: 320, h: 200, color: '#8a2f2f', label: 'LODGE', roof: '#5f1f1f' },
-    // Depot where the cold package waits (west end of Main Street)
-    { x: 120, y: 1290, w: 240, h: 170, color: '#4a6e8a', label: 'DEPOT ES', roof: '#33506a' },
+    // The cold-storage depot, at the north-west corner, clear of the ski slope.
+    { x: 120, y: 70, w: 240, h: 170, color: '#4a6e8a', label: 'DEPOT ES', roof: '#33506a' },
   ];
 
   // Special zones: the ski slope (west strip) and the frozen lake (south-east).
@@ -104,8 +104,8 @@ export function createWorld() {
     spawns: {
       player: { x: 700, y: 1330 },
       plow: { x: 760, y: 1200, angle: 0 },
-      depot: { x: 250, y: 1200 },
-      lodge: { x: 2540, y: 1740 },
+      depot: { x: 250, y: 300 },
+      lodge: { x: 2540, y: 1880 },
       checkpoint: { x: 2150, y: 1200 },
       slopeTop: { x: 220, y: 330 },
       slopeBottom: { x: 220, y: 2080 },

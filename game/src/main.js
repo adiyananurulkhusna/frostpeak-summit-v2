@@ -64,6 +64,7 @@ seedSnow(G);
 // Test and debug handle: the state is readable from the console and from
 // automated playtests. It never changes the game on its own.
 window.__frost = G;
+G.startMission = (i) => startMission(G, i);
 
 function seedPickups(G) {
   const spots = [

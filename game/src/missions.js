@@ -229,7 +229,7 @@ export function updateMissions(G, dt) {
       }
     }
   } else if (M.index === 3) {
-    const drop = { x: 2230, y: 1660 };
+    const drop = { x: 2230, y: 1790 };
     const checkpoint = G.world.spawns.checkpoint;
     if (!M.carrying) {
       // The goods wait at the depot again.
@@ -335,7 +335,7 @@ export function missionTarget(G) {
   }
   if (M.index === 3) {
     return M.carrying
-      ? { x: 2230, y: 1660 }
+      ? { x: 2230, y: 1790 }
       : { x: G.world.spawns.depot.x, y: G.world.spawns.depot.y };
   }
   if (M.index === 4) {
@@ -399,7 +399,7 @@ export function drawMissionLayer(ctx, G) {
     ctx.textAlign = 'center';
     ctx.fillText('POS POLISI', cp.x, cp.y - 48);
     ctx.restore();
-    if (M.carrying) drawMarker(ctx, 2230, 1660, pulse, '#4caf50', 'GUDANG');
+    if (M.carrying) drawMarker(ctx, 2230, 1790, pulse, '#4caf50', 'GUDANG');
   }
   if (M.index === 4 && G.race && G.race.active) {
     const bottom = G.world.spawns.slopeBottom;

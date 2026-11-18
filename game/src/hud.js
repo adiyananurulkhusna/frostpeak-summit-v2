@@ -116,7 +116,9 @@ export function drawHUD(ctx, G) {
     wrapText(ctx, d.text, 112, G.view.h - 78, W - 224, 20);
     ctx.fillStyle = 'rgba(255,255,255,0.6)';
     ctx.font = '12px sans-serif';
-    ctx.fillText('Tekan tombol apa saja untuk lanjut', W - 300, G.view.h - 58);
+    ctx.textAlign = 'right';
+    ctx.fillText('Tekan tombol apa saja untuk lanjut', W - 112, G.view.h - 58);
+    ctx.textAlign = 'left';
     ctx.restore();
   }
 
@@ -226,19 +228,19 @@ export function drawTitle(ctx, G) {
   ctx.fillStyle = '#e8eef6';
   ctx.beginPath();
   ctx.moveTo(0, H);
-  ctx.lineTo(180, 260);
+  ctx.lineTo(180, 430);
   ctx.lineTo(360, H);
   ctx.closePath();
   ctx.fill();
   ctx.beginPath();
   ctx.moveTo(300, H);
-  ctx.lineTo(620, 180);
+  ctx.lineTo(620, 380);
   ctx.lineTo(940, H);
   ctx.closePath();
   ctx.fill();
   ctx.beginPath();
   ctx.moveTo(820, H);
-  ctx.lineTo(1080, 300);
+  ctx.lineTo(1080, 460);
   ctx.lineTo(1280, H);
   ctx.closePath();
   ctx.fill();
@@ -278,7 +280,7 @@ export function drawTitle(ctx, G) {
     ctx.fillText(c[1], W / 2 - 60, y);
     ctx.textAlign = 'center';
   });
-  ctx.fillStyle = 'rgba(255,255,255,0.75)';
+  ctx.fillStyle = '#33506a';
   ctx.font = '13px sans-serif';
   ctx.fillText('Game open-world 2D — dibuat untuk bounty Make GTA 6 di make.fun', W / 2, H - 24);
   ctx.textAlign = 'left';
